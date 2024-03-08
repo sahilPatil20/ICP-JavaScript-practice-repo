@@ -42,8 +42,39 @@
             console.log("Sorry you don't have access to this!!!!\n");
             console.log("Statement Terminated\n")
         }
+        console.log("\n");
 
+        console.log("if else ladder Statement :\n");
+        console.log("Check you grade : \n");
+
+        const phy = prompt("Enter your marks in Physics : ");
+        const chem = prompt("Enter your marks in Chemistry :");
+        const maths = prompt("Enter your marks in Mathametics :");
+
+        const total = parseFloat(phy) + parseFloat(chem) + parseFloat(maths);
+        const avg = (total/300)*100;
         
+        if (avg >= 90) {
+            console.log("You have 'A' Grade!!!");
+        }
+        else if (avg >= 80) {
+            console.log("You have 'B' Grade!!!");
+        }
+        else if (avg >= 70) {
+            console.log("You have 'C' Grade!!!");
+        }
+        else if (avg >= 60) {
+            console.log("You have 'D' Grade!!!");
+        }
+        else if (avg >= 50) {
+            console.log("You have 'E' Grade!!!");
+        }
+        else {
+            console.log("I'm Sorry you are FAIL!!!\nButter Luck Next Time");
+        }
+
+        console.log("Statement Terminated\n")
+
 
 
 
