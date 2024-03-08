@@ -14,14 +14,38 @@
         console.log("\n");
         
         console.log("if Statement : \n");
-        let opinion = confirm("Do you want to move further : \n");
+        let opinion = confirm("Do you want to move further ? \n");
 
         if (opinion == true) {
             console.log("This is if statement!!!!")
         }
         console.log("Statement Terminated\n");
+        console.log("\n");
         
+        console.log("if else Statement : \n");
+        opinion = prompt("Enter the you course have enrolled : \n Note: All alphabets should be in CAPITAL LETTERS.");
         
+        if (opinion=="ICP") {
+            console.log("Welcome to ICP lecture 46\n");
+            console.log("\n");
+            const num = prompt("Enter a number to check divisible by 5 : ");
+            
+            if (num%5==0) {
+                console.log(`Number "${num}" is divisible by 5.`);
+            }
+            else {
+                console.log(`Number "${num}" is not divisible by 5`);
+            }
+            console.log("Statement Terminated\n")
+        }
+        else {
+            console.log("Sorry you don't have access to this!!!!\n");
+            console.log("Statement Terminated\n")
+        }
+
+        
+
+
 
     
     </script>
