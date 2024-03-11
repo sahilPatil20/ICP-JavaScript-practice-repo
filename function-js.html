@@ -27,17 +27,17 @@
         <script>
             console.log("Functions!!!");
 
-            function add() {
-                const a = prompt("Enter first number : ");
-                const b = prompt("Enter second number : ");
+            function add(a,b) {
                 const c = parseInt(a) + parseInt(b);
 
                 console.log(`Addition of ${a} and ${b} is ${c}.`);
                 alert(`Addition of ${a} and ${b} is ${c}.`);
             }
 
-            add();
-            
+            a = prompt("Enter first number : ");
+            b = prompt("Enter second number : ");
+            add(a,b);
+
         </script>
 </body>
 </html>
