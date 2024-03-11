@@ -10,15 +10,14 @@
     <p>
         Functions <br> 
         Two types of Functions <br>
-                 | <br>
-        _________|__________ <br>
-        |                   | <br>
-      system            user <br>
-      defined         defined <br>
+        <ul>
+            <li>System Defined</li>
+            <li>User Defined</li>
+        </ul>
         Syntax : <br>
         function function-name(arguments) <br>
         { <br>
-         <br>
+
             //function body <br>
 
         } <br>
@@ -29,14 +28,16 @@
             console.log("Functions!!!");
 
             function add() {
-                const a = prompt("Enter the number : ");
+                const a = prompt("Enter first number : ");
                 const b = prompt("Enter second number : ");
                 const c = parseInt(a) + parseInt(b);
 
                 console.log(`Addition of ${a} and ${b} is ${c}.`);
+                alert(`Addition of ${a} and ${b} is ${c}.`);
             }
 
             add();
+            
         </script>
 </body>
 </html>
