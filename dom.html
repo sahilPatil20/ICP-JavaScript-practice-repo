@@ -8,6 +8,23 @@
 <body>
     <h2>DOM Manipulation</h2>
 
-    
+    <p>
+        Message : <span id="message"></span>
+    </p>
+
+    <button type="button" onclick="sayHello()">Say Hello</button>
+    <button type="button" onclick="saygoodmorning()">Say Good Morning</button>
+
+    <script>
+        function sayHello() {
+            const element = document.getElementById("message");
+            element.innerText = "Hello";
+        }
+
+        function saygoodmorning() {
+            const element = document.getElementById("message");
+            element.innerText = "Good Morning";
+        }
+    </script>
 </body>
 </html>
