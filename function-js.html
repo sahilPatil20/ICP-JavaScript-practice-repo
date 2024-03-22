@@ -27,16 +27,28 @@
         <script>
             console.log("Functions!!!");
 
-            console.log("No Arugment No Return")
+            console.log("No Arugment No Return");
             
-            console.log("Area of Circle")
+            console.log("Circle")
             function areaCricle() {
                 const radius = prompt("Enter radius of circle : ");
                 const area = 3.14 * radius * radius;
                 console.log(`Area of circle = ${area}`);
             }
             areaCricle();
-            
+
+            console.log("Argument with No Return");
+            console.log("Addition of Two Numbers");
+            function add(a,b) {
+                const c = parseInt(a) + parseInt(b);
+
+                console.log(`Addition of ${a} and ${b} is ${c}.`);
+                alert(`Addition of ${a} and ${b} is ${c}.`);
+            }
+
+            a = prompt("Enter first number : ");
+            b = prompt("Enter second number : ");
+            add(a,b);
 
             
 
