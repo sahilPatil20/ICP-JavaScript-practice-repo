@@ -43,14 +43,25 @@
                 const c = parseInt(a) + parseInt(b);
 
                 console.log(`Addition of ${a} and ${b} is ${c}.`);
-                alert(`Addition of ${a} and ${b} is ${c}.`);
             }
 
             a = prompt("Enter first number : ");
             b = prompt("Enter second number : ");
             add(a,b);
 
-            
+            console.log("No Argument but Return");
+            console.log("Calculate Simple Interest");
+            function simpleInterest() {
+                const time = 2;
+                const principle = prompt("Enter Amount :");
+                const rate = prompt("Enter Rate : ");
+
+                const interest = parseFloat((principle*rate*time)/100);
+                return interest;
+            }
+
+            const amt = simpleInterest();
+            console.log(`Simple Interest = ${amt}`);
 
         </script>
 </body>
